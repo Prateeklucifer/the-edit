@@ -39,7 +39,7 @@ export default function Navbar() {
     return (
         <nav className="py-3 md:py-4 px-4">
             <div className="container m-auto flex items-center justify-between">
-                <Link href={"/"} className="logo font-semibold text-xl md:text-2xl text-zinc-700">Chord<span className="text-indigo-500">Chill</span></Link>
+                <Link href={"/"} className="logo font-semibold text-xl md:text-2xl text-zinc-700">the<span className="text-indigo-500">Edit.</span></Link>
                 <button className="forMobi md:hidden" onClick={() => { handleHamburger() }}><HiBars3 size={30} /></button>
                 <div className={`${isOpen ? "flex" : "hidden"} overlay absolute top-0 left-0 h-screen w-screen bg-black/40 z-10`}></div>
                 <div className={`${isOpen ? "flex z-20 right-0" : "hidden right-32 "} flex-col sidebar absolute top-0  h-screen bg-white w-60 text-neutral-900 py-3 px-4 `}>
