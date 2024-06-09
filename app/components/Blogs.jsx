@@ -25,7 +25,7 @@ export default function BlogsCmp() {
         >
           <div className="left">
             <Image
-              src="/w-1.png"
+              src={`/${item.imageUrl}`}
               height={450}
               width={450}
               className="rounded-lg w-full h-full object-cover"

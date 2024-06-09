@@ -185,39 +185,39 @@ export default function BloodsPage() {
                                     </div>
                                 </summary>
                                 <div className="faq flex flex-col my-2">
-                                    <label htmlFor="title">
+                                    <label htmlFor={`title${index}`}>
                                         <div className="py-2 flex items-center justify-between">Title </div>
-                                        <input type="text" name="title" id="title" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.title} onChange={(e) => {
+                                        <input type="text" name={`title${index}`} id={`title${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.title} onChange={(e) => {
                                             updateTitle(e, item._id)
                                         }} />
                                     </label>
-                                    <label htmlFor="description">
+                                    <label htmlFor={`description${index}`}>
                                         <div className="block py-2">Description</div>
-                                        <input type="text" name="description" id="description" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.description} onChange={(e) => {
+                                        <input type="text" name={`description${index}`} id={`description${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.description} onChange={(e) => {
                                             updateDescription(e, item._id)
                                         }} />
                                     </label>
-                                    <label htmlFor="imageUrl">
+                                    <label htmlFor={`imageUrl${index}`}>
                                         <div className="block py-2">Image URL</div>
-                                        <input type="text" name="imageUrl" id="imageUrl" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.imageUrl} onChange={(e) => {
+                                        <input type="text" name={`imageUrl${index}`} id={`imageUrl${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.imageUrl} onChange={(e) => {
                                             updateImageUrl(e, item._id)
                                         }} />
                                     </label>
-                                    <label htmlFor="para1">
+                                    <label htmlFor={`para1${index}`}>
                                         <div className="block py-2">Paragraph 1</div>
-                                        <input type="text" name="para1" id="para1" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.para1} onChange={(e) => {
+                                        <input type="text" name={`para1${index}`} id={`para1${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.para1} onChange={(e) => {
                                             updatePara1(e, item._id)
                                         }} />
                                     </label>
-                                    <label htmlFor="para2">
+                                    <label htmlFor={`para2${index}`}>
                                         <div className="block py-2">Paragraph 2</div>
-                                        <input type="text" name="para2" id="para2" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.para2} onChange={(e) => {
+                                        <input type="text" name={`para2${index}`} id={`para2${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.para2} onChange={(e) => {
                                             updatePara2(e, item._id)
                                         }} />
                                     </label>
-                                    <label htmlFor="para3">
+                                    <label htmlFor={`para3${index}`}>
                                         <div className="block py-2">Paragraph 3</div>
-                                        <input type="text" name="para3" id="para3" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.para3} onChange={(e) => {
+                                        <input type="text" name={`para3${index}`} id={`para3${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.para3} onChange={(e) => {
                                             updatePara3(e, item._id)
                                         }} />
                                     </label>

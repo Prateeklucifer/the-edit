@@ -80,7 +80,7 @@ export default function ContactPage() {
       <div className="md:px-4">
         <div className="container m-auto my-2 px-4 md:px-0">
           <div className="heading font-semibold text-3xl text-center mb-8">
-            Contacts
+            Enquiry
           </div>
           <div className="data my-4 text-zinc-800 flex flex-col gap-4">
             {contact?.length >= 0 &&

@@ -12,24 +12,24 @@ export async function GET() {
     if (allEntries.length == 0) {
       await Services.create(
         {
-          title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Branding & Identity",
           paragraph:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae a quasi, ullam velit in eveniet ipsa doloribus. Aliquid blanditiis, neque sunt temporibus est mollitia porro unde, odit ex omnis excepturi corporis ratione, placeat perspiciatis. Natus blanditiis nobis repellendus eius minima, hic quam quisquam accusantium!",
+            "theEdit goes beyond just logos. We help you develop a strong brand identity that resonates with your target audience. From crafting a unique logo to establishing a consistent visual language across all platforms, we'll ensure your brand is instantly recognizable and memorable.",
         },
         {
-          title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Website Design & Development",
           paragraph:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae a quasi, ullam velit in eveniet ipsa doloribus. Aliquid blanditiis, neque sunt temporibus est mollitia porro unde, odit ex omnis excepturi corporis ratione, placeat perspiciatis. Natus blanditiis nobis repellendus eius minima, hic quam quisquam accusantium!",
+            "Your website is often the first impression potential customers have of your business. theEdit creates stunning and user-friendly websites that not only look great but also convert visitors into leads or sales. We handle everything from initial concept to development and launch, ensuring your website is optimized for both performance and aesthetics.",
         },
         {
-          title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "User Interface (UI) & User Experience (UX) Design",
           paragraph:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae a quasi, ullam velit in eveniet ipsa doloribus. Aliquid blanditiis, neque sunt temporibus est mollitia porro unde, odit ex omnis excepturi corporis ratione, placeat perspiciatis. Natus blanditiis nobis repellendus eius minima, hic quam quisquam accusantium!",
+            "At theEdit, we understand that good design is not just about how something looks, but also about how it functions. Our UI/UX design services focus on creating intuitive and user-friendly experiences that cater to your target audience's needs. We'll ensure your website or application is easy to navigate and use, keeping users engaged and coming back for more.",
         },
         {
-          title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Design Strategy & Consulting",
           paragraph:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae a quasi, ullam velit in eveniet ipsa doloribus. Aliquid blanditiis, neque sunt temporibus est mollitia porro unde, odit ex omnis excepturi corporis ratione, placeat perspiciatis. Natus blanditiis nobis repellendus eius minima, hic quam quisquam accusantium!",
+            "Need help navigating the ever-evolving design landscape? theEdit offers design strategy and consulting services to help you make informed design decisions. We can advise on current design trends, best practices, and how to leverage design to achieve your specific business objectives.",
         }
       );
 

@@ -92,15 +92,15 @@ export default function AdminFAQs() {
             {console.log(FAQs)}
             {FAQs?.map((item, index) => (
               <div className="faq flex flex-col" key={index}>
-                <label htmlFor="name">
+                <label htmlFor={`title${index}`}>
                   <div className="block py-2">Title</div>
-                  <input type="text" name="name" id="name" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.title} onChange={(e) => {
+                  <input type="text" name={`title${index}`} id={`title${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.title} onChange={(e) => {
                     updateTitle(e, index)
                   }} />
                 </label>
-                <label htmlFor="para">
+                <label htmlFor={`paragraph${index}`}>
                   <div className="block py-2">Paragraph</div>
-                  <textarea name="para" id="para" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.paragraph} onChange={(e) => {
+                  <textarea name={`paragraph${index}`} id={`paragraph${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.paragraph} onChange={(e) => {
                     updateParagraph(e, index)
                   }}></textarea>
                 </label>

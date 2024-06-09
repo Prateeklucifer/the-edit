@@ -91,15 +91,15 @@ export default function AdminServices() {
           <div className="Services flex flex-col gap-6">
             {Services?.map((item, index) => (
               <div className="faq flex flex-col" key={index}>
-                <label htmlFor="name">
+                <label htmlFor={`name${index}`}>
                   <div className="block py-2">Title</div>
-                  <input type="text" name="name" id="name" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.title} onChange={(e) => {
+                  <input type="text" name={`name${index}`} id={`name${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.title} onChange={(e) => {
                     updateTitle(e, index)
                   }} />
                 </label>
-                <label htmlFor="para">
+                <label htmlFor={`para${index}`}>
                   <div className="block py-2">Paragraph</div>
-                  <textarea name="para" id="para" className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.paragraph} onChange={(e) => {
+                  <textarea name={`para${index}`} id={`para${index}`} className="px-2 rounded-sm outline-none ring-1 ring-zinc-400 w-full" value={item.paragraph} onChange={(e) => {
                     updateParagraph(e, index)
                   }}></textarea>
                 </label>

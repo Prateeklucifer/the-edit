@@ -11,16 +11,17 @@ export async function GET() {
 
     if (allEntries.length == 0) {
       await About.create({
-        mainTitle: "Empowering You to Save Lives",
+        mainTitle: "Design Focused on Your Success",
         para1:
-          "At Jeevan Dhara, we believe in the extraordinary power of everyday people to create positive change. Our mission is simple: Empowering You to Save Lives. We achieve this by providing a user-friendly platform that connects volunteer blood donors with local donation centers. Through education, streamlined processes, and a commitment to community, we aim to make blood donation accessible and impactful for everyone.",
+          "theEdit is a passionate team of designers dedicated to crafting impactful and results-oriented design solutions. We believe that good design is more than just aesthetics; it's a strategic tool that can elevate your brand, engage your audience, and drive business growth.",
         para2:
-          "Together, with your selfless act of donation, we can ensure a constant supply of life-saving blood for those in need.",
-        secondaryTitle: "Making a Difference, One Donation at a Time",
+          "With a keen eye for detail and a commitment to collaboration, we work closely with our clients to understand their unique needs and goals. We translate those insights into creative solutions that are not only beautiful but also functional and effective.",
+
+        secondaryTitle: "At theEdit, our ultimate goal is your success",
         para3:
-          "Blood transfusions are critical for surgeries, accident victims, and those battling illnesses. A single blood donation can save up to three lives. By streamlining the donation process and connecting you with local centers in need.",
+          "We don't just create pretty pictures. Our focus is on designing websites, logos, and experiences that resonate with your target audience, drive engagement, and achieve your specific business objectives.",
         para4:
-          "Jeevan Dhara empowers you to make a real difference in someone's life. Every donation counts – join the movement and be a hero!",
+          "We believe in fostering strong relationships with our clients. We take the time to understand your vision and work collaboratively to bring it to life, ensuring a successful outcome and a long-lasting partnership.",
       });
 
       let allData = await FAQs.find({});

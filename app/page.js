@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       
       <div className="mt-16">
-        <AboutCmp />
+        <AboutCmp page={"home"} />
       </div>
 
       <div className="mt-16">

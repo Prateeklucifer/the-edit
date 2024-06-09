@@ -12,24 +12,24 @@ export async function GET() {
     if (allEntries.length == 0) {
       await FAQs.create(
         {
-          title: "Am I eligible to donate blood?",
+          title: "What design services does theEdit offer?",
           paragraph:
-            "This is a common question for first-time donors. The site can provide a link to a blood donation eligibility quiz that asks about age, weight, health history, medications, and recent travel. The quiz will give a preliminary answer, but a final determination will be made at the donation center.",
+            "theEdit offers a comprehensive range of design services, including logo design, website design and development, user interface (UI) and user experience (UX) design, and more.",
         },
         {
-          title: "How long does the donation process take?",
+          title: "Can theEdit help me with branding?",
           paragraph:
-            "While the actual blood donation only takes about 10-15 minutes, the entire process can take 1-2 hours. This includes registration, completing a health questionnaire, a mini-physical, the donation itself, and refreshments afterwards.",
+            "Absolutely! Logo design is just one aspect of branding, and theEdit can help you develop a cohesive brand identity that extends across all your touchpoints.",
         },
         {
-          title: "What happens to my blood after I donate?",
+          title: "What is the design process like at theEdit?",
           paragraph:
-            "Donated blood goes through a rigorous testing process to ensure it is safe for transfusion. Then, the blood is separated into its components (red blood cells, platelets, plasma) because different patients need different blood products. The blood is then stored for a specific period depending on the component.",
+            " theEdit follows a collaborative design process that begins with a consultation to understand your needs and goals. We'll then develop concepts, gather your feedback, and refine the design until you're happy with the final product.",
         },
         {
-          title: "What happens to my blood after I donate?",
+          title: "How long does the design process typically take?",
           paragraph:
-            "Donated blood goes through a rigorous testing process to ensure it is safe for transfusion. Then, the blood is separated into its components (red blood cells, platelets, plasma) because different patients need different blood products. The blood is then stored for a specific period depending on the component.",
+            "The timeframe will vary depending on the scope of your project. However, theEdit will work closely with you to establish realistic deadlines.",
         }
       );
 
