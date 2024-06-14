@@ -15,7 +15,7 @@ export async function middleware(request) {
     if (token) {
       const response = await verifyToken(token.value);
       if (response.status == 200) {
-        return NextResponse.redirect(new URL("/admin/bloods", request.url)); // if token is vailed redirect the user
+        return NextResponse.redirect(new URL("/admin/blogs", request.url)); // if token is vailed redirect the user
       }
     }
   }
@@ -27,6 +27,8 @@ export async function middleware(request) {
       if (response.status != 200) {
         return NextResponse.redirect(new URL("/login", request.url)); // if token is vailed redirect the user
       }
+    } else {
+      return NextResponse.redirect(new URL("/login", request.url));
     }
   }
 
