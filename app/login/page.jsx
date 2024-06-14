@@ -33,14 +33,10 @@ export default function LoginPage() {
     }
 
     return (
-        <div className="flex justify-center items-center flex-col h-[70vh]">
-            <div className="md:px-4">
-                <div className="container m-auto px-4 md:px-0">
-                    <div className="Heading font-bold text-center text-2xl mt-4 md:mt-8 text-zinc-700 md:text-3xl">Login</div>
-                </div>
-            </div>
-            <div className=" container mx-auto flex flex-col md:px-32 lg:px-52 xl:px-64 2xl:px-72 ">
-                <div className="right px-4 py-2 flex flex-col gap-6 lg:py-8 lg:px-12 xl:px-28">
+        <div className="">
+            <div className="flex flex-col justify-start w-full lg:flex-row min-h-screen">
+            <div className="right flex flex-col gap-6 lg:w-[50%] justify-center px-16 py-20">
+                    <div className="text-2xl md:text-3xl text-center font-bold">welcome back</div>
 
                     <div className="name">
                         <label htmlFor="name" className="block mb-2">Name</label>
@@ -54,6 +50,10 @@ export default function LoginPage() {
                     <button className="text-white px-4 py-2 rounded-md bg-red-500 hover:bg-red-500/90 w-full font-semibold" onClick={sendRequest}>Login</button>
 
                 </div>
+                <div className="left hidden lg:flex flex-col gap-6 lg:w-[50%]">
+                    <img src="/login.png" alt="" className='h-full object-cover'/>
+                </div>
+              
             </div>
         </div>
     )
