@@ -47,7 +47,7 @@ export default function LoginPage() {
                         <input type="password" name="" id="password" className="w-full px-2 py-1 outline-zinc-600 outline-1 ring-1 rounded-sm ring-neutral-400" value={password} onChange={getPassword} />
                     </div>
 
-                    <button className="text-white px-4 py-2 rounded-md bg-red-500 hover:bg-red-500/90 w-full font-semibold" onClick={sendRequest}>Login</button>
+                    <button className="text-white px-4 py-2 rounded-md bg-indigo-500 hover:bg-indigo-600 w-full font-semibold" onClick={sendRequest}>Login</button>
 
                 </div>
                 <div className="left hidden lg:flex flex-col gap-6 lg:w-[50%]">
