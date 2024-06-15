@@ -29,7 +29,7 @@ export default function AdminPannel() {
       href: "/admin/faq",
     },
     {
-      name: "Contact Us",
+      name: "Enquiry",
       href: "/admin/contact",
     },
   ];
